@@ -1,21 +1,12 @@
 module.exports = {
+  darkMode: 'class',
   content: ["./src/**/*.tsx"],
-  // darkMode: 'class',
   theme: {
-    extend: {      
-      // backgroundColor:{
-      //   primary: 'var(--color-bg-primary)',
-
-      // },
-      // textColor:{
-      //   primary: 'var(--color-text-primary)'
-      // },
+    extend: {
       colors: {
         brand: {
           300: '#996DFF',
-          500: '#8257e6',
-          // bk: '#000000',
-          // wt: '#ffffff'
+          500: '#8257e6'
         }
       },
       borderRadius: {
@@ -26,5 +17,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('tailwind-scrollbar'),
+    // ...
   ],
 }

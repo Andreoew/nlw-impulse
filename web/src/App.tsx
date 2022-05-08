@@ -1,9 +1,11 @@
-import { Widget } from "./components/Widget"
-
+import { DarkModeSwitch } from "./components/DarkModeSwitch";
+import { Widget } from "./components/Widget";
 
 export function App() {
-  return <Widget />
-  
+  return (
+    <>
+      <DarkModeSwitch />
+      <Widget />
+    </>
+    )
 }
-
-
