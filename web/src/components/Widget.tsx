@@ -14,7 +14,7 @@ import { Header } from './Header'
 export function Widget(){ 
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme',dark);
 
-  function toggleTheme(){
+  const toggleTheme = () =>{
     setTheme(theme.title === 'light' ? dark : light);
   };
 
